@@ -25,7 +25,7 @@ const isSuitableToPutXThere = (i, j, x) => {
 
   for (let ii = 0; ii < 3; ii++) {
     for (let jj = 0; jj < 3; jj++) {
-      if (sudoku[boxRow + ii][boxColumn + jj] == x) {
+      if (sudoku[boxRow + ii][boxColumn + jj] === x) {
         return false;
       }
     }
